@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="TestWeb, MrHuangCom">
+    <meta name="keywords" content="开发文档, MrHuangCom">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>TestWeb | MR.HuangBlog</title>
+    <title>开发文档 | MR.HuangBlog</title>
     <link rel="icon" type="image/png" href="/boxnav.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -247,12 +247,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">TestWeb</h1>
+                    <h1 class="description center-align post-title">开发文档</h1>
                 </div>
             </div>
         </div>
@@ -380,7 +380,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-01-01
+                    2021-01-06
                 </div>
                 
 
@@ -401,7 +401,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="这里是基于Markdown写的测试内容"><a href="#这里是基于Markdown写的测试内容" class="headerlink" title="这里是基于Markdown写的测试内容"></a>这里是基于Markdown写的测试内容</h3><h2 id="后续内容会持续更新"><a href="#后续内容会持续更新" class="headerlink" title="后续内容会持续更新"></a>后续内容会持续更新</h2>
+                <h2 id="记录hexo框架下添加功能的开发文档"><a href="#记录hexo框架下添加功能的开发文档" class="headerlink" title="记录hexo框架下添加功能的开发文档"></a>记录hexo框架下添加功能的开发文档</h2><p>注：本文由Markdown注写</p>
+<h3 id="广告弹窗设计（部分）"><a href="#广告弹窗设计（部分）" class="headerlink" title="广告弹窗设计（部分）"></a>广告弹窗设计（部分）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">     welc &#x3D; document.createElement(&quot;div&quot;);		&#x2F;&#x2F;js为页面添加元素</span><br><span class="line">     welc.id&#x3D;&quot;gg&quot;;</span><br><span class="line">    welc.innerHTML&#x3D;&quot;&lt;p&gt;点一下晚一年，装备不花一分钱&lt;&#x2F;p&gt;&quot;;</span><br><span class="line">    document.body.appendChild(welc);</span><br><span class="line">	wel &#x3D; document.createElement(&quot;span&quot;);</span><br><span class="line">	wel.id&#x3D;&quot;dele&quot;;</span><br><span class="line">	wel.innerHTML&#x3D;&quot;X&quot;;</span><br><span class="line">	document.body.appendChild(wel);</span><br><span class="line">	wel.css(&#123;								&#x2F;&#x2F;设置弹窗页面</span><br><span class="line">	&quot;width&quot;: &quot;310px&quot;,</span><br><span class="line">	&quot;height&quot;: &quot;144px&quot;,</span><br><span class="line">	&quot;background-color&quot;: yellowgreen,</span><br><span class="line">	&quot;position&quot;: fixed,</span><br><span class="line">	&quot;left&quot;: &quot;50%&quot;,</span><br><span class="line">	&quot;top&quot;: &quot;50%&quot;,</span><br><span class="line">	&quot;margin-left&quot;: &quot;-155px&quot;,</span><br><span class="line">	&quot;margin-top&quot;: &quot;-72px&quot;,</span><br><span class="line">	&quot;display&quot;: none</span><br><span class="line">	&#125;);</span><br><span class="line">    var Pop &#x3D; document.getElementById(&quot;gg&quot;);</span><br><span class="line">    var Dele &#x3D; document.getElementById(&quot;dele&quot;);</span><br><span class="line">    window.onload &#x3D; function()&#123;</span><br><span class="line">        Pop.style.display &#x3D; &quot;block&quot;;</span><br><span class="line">        Dele.onclick &#x3D; function()&#123;</span><br><span class="line">            Pop.style.display &#x3D; &quot;none&quot;;</span><br><span class="line">            setTimeout(function()&#123;</span><br><span class="line">                Pop.style.display &#x3D; &quot;block&quot;;</span><br><span class="line">            &#125;,3000)							&#x2F;&#x2F;设置弹窗延时</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="时间打字机（部分）"><a href="#时间打字机（部分）" class="headerlink" title="时间打字机（部分）"></a>时间打字机（部分）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.subtitle.enable) &#123; %&gt;</span><br><span class="line">                &lt;span id&#x3D;&quot;subtitle&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">                &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;typed.js@2.0.11&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">                &lt;script&gt;</span><br><span class="line">				&#x2F;&#x2F;typed 打字机方法</span><br><span class="line">					var typed &#x3D; new Typed(&quot;#subtitle&quot;, </span><br><span class="line">					&#123;</span><br><span class="line">                        strings: [ &quot;&lt;%&#x3D; new Date();%&gt;&quot; &#x2F;&#x2F;获得现在时间],</span><br><span class="line">                        startDelay: &lt;%&#x3D; theme.subtitle.startDelay %&gt;,&#x2F;&#x2F;设置开始延迟 返回文本值</span><br><span class="line">                        typeSpeed: &lt;%&#x3D; theme.subtitle.typeSpeed %&gt;, &#x2F;&#x2F; 打字速度 返回文本</span><br><span class="line">                        loop: &lt;%&#x3D; theme.subtitle.loop %&gt;, &#x2F;&#x2F; 是否循环</span><br><span class="line">                        backSpeed: &lt;%&#x3D; theme.subtitle.backSpeed %&gt;, &#x2F;&#x2F; 打字速度</span><br><span class="line">                        showCursor: &lt;%&#x3D; theme.subtitle.showCursor %&gt; &#x2F;&#x2F; 现实光标</span><br><span class="line">                    &#125;);</span><br><span class="line">                &lt;&#x2F;script&gt;				</span><br></pre></td></tr></table></figure>
+<h3 id="背景轮显"><a href="#背景轮显" class="headerlink" title="背景轮显"></a>背景轮显</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    &#x2F;&#x2F; 每分钟变更底图</span><br><span class="line">    var bannerUrl &#x3D; &#x2F;&#x2F; &lt;%- node.js框架语言 不带入h5语言转译 此处是直接获取文档路径</span><br><span class="line">	&quot;&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for(&#39;&#x2F;medias&#x2F;banner&#x2F;&#39;) %&gt;&quot; + new Date().getMinutes() + &#39;.jpg&#39;;</span><br><span class="line">    $(&#39;.bg-cover&#39;).css(&#39;background-image&#39;, &#39;url(&#39; + bannerUrl + &#39;)&#39;); &#x2F;&#x2F;文件banner放入底图</span><br><span class="line">	$(&#39;.bg-cover&#39;).css(&#39;background-image&#39;, &#39;url(&lt;%- theme.jsDelivr.url %&gt;&lt;%- url_for(&#39;&#x2F;medias&#x2F;banner&#x2F;0.jpg&#39;) %&gt;)&#39;);</span><br><span class="line">	&#x2F;&#x2F;从数组坐标0开始读取图片 0-59 共计60张图片 每分钟换一张</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">.bg-cover &#123;</span><br><span class="line">    position: relative;</span><br><span class="line">    display: flex; </span><br><span class="line">    align-items: center;</span><br><span class="line">    height: 60vh; &#x2F;&#x2F;图片占整个页面百分比</span><br><span class="line">    padding: 0;</span><br><span class="line">    border: 0;</span><br><span class="line">    overflow: hidden;&#x2F;&#x2F;溢出图隐藏</span><br><span class="line">    background-position: center center;</span><br><span class="line">    background-size: cover;</span><br><span class="line">    transform: translate3d(0px, 0px, 0px);</span><br><span class="line">&#125;&#x2F;&#x2F;定义背景图</span><br></pre></td></tr></table></figure>
+<h3 id="快速链接下拉链接"><a href="#快速链接下拉链接" class="headerlink" title="快速链接下拉链接"></a>快速链接下拉链接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;i class&#x3D;&quot;&lt;%- theme.menu[key].icon %&gt;&quot; style&#x3D;&quot;zoom: 0.6;&quot;&gt;&lt;&#x2F;i&gt; 导入fas矢量库图标</span><br><span class="line">&lt;li class&#x3D;&quot;hide-on-med-and-down nav-item&quot;&gt;</span><br><span class="line">    &lt;% if(!theme.menu[key].children) &#123; %&gt;</span><br><span class="line">    &lt;a href&#x3D;&quot;&lt;%- url_for(theme.menu[key].url) %&gt;&quot; class&#x3D;&quot;waves-effect waves-light&quot;&gt;</span><br><span class="line">	&lt;% if (theme.menu[key].icon &amp;&amp; theme.menu[key].icon.length &gt; 0) &#123; %&gt;</span><br><span class="line">	&lt;i class&#x3D;&quot;&lt;%- theme.menu[key].icon %&gt;&quot; style&#x3D;&quot;zoom: 0.6;&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">	&lt;% &#125; %&gt; &#x2F;&#x2F;获取子li标签中链接内容</span><br><span class="line">&lt;li class&#x3D;&quot;hide-on-med-and-down nav-item&quot;&gt; &#x2F;&#x2F;鼠标放入前</span><br><span class="line">&lt;li class&#x3D;&quot;hide-on-med-and-down nav-item nav-show&quot;&gt; &#x2F;&#x2F;鼠标放入后</span><br></pre></td></tr></table></figure>
+<h3 id="图片放大（部分）"><a href="#图片放大（部分）" class="headerlink" title="图片放大（部分）"></a>图片放大（部分）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$(function()&#123; </span><br><span class="line">$(&quot;.pic&quot;).click(function()&#123; </span><br><span class="line">     var _this &#x3D; $(this);</span><br><span class="line">     imgShow(&quot;#outerdiv&quot;, &quot;#innerdiv&quot;, &quot;#bigimg&quot;, _this); </span><br><span class="line">   &#125;); </span><br><span class="line"> &#125;); </span><br><span class="line"> function imgShow(outerdiv, innerdiv, bigimg, _this)&#123; </span><br><span class="line">   var src &#x3D; _this.attr(&quot;src&quot;);&#x2F;&#x2F;获取当前点击的pimg元素中的src属性 </span><br><span class="line">   $(bigimg).attr(&quot;src&quot;, src);&#x2F;&#x2F;设置#bigimg元素的src属性 </span><br><span class="line">   $(&quot;&lt;img&#x2F;&gt;&quot;).attr(&quot;src&quot;, src).load(function()&#123; </span><br><span class="line">     var windowW &#x3D; $(window).width();</span><br><span class="line">     var windowH &#x3D; $(window).height();</span><br><span class="line">     var realWidth &#x3D; this.width;&#x2F;&#x2F;图片宽度 </span><br><span class="line">     var realHeight &#x3D; this.height;&#x2F;&#x2F;图片高度 </span><br><span class="line">     var imgWidth, imgHeight; </span><br><span class="line">     var scale &#x3D; 0.8;&#x2F;&#x2F;缩放</span><br><span class="line">   $(outerdiv).click(function()&#123;&#x2F;&#x2F;再次点击淡出消失弹出层 </span><br><span class="line">     $(this).fadeOut(&quot;fast&quot;); </span><br><span class="line">   &#125;); </span><br><span class="line"> &#125; </span><br></pre></td></tr></table></figure>
+<p>剩余几个需求还没做完，有git和nodejs的配合框架看着很多地方不懂<br>总结一下：没有金刚钻别揽瓷器活</p>
+<p><strong>From</strong></p>
+<img src="/2021/01/06/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/head.png" class title="cat from huang">
                 
             </div>
             <hr/>
@@ -716,9 +724,48 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/01/06/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="开发文档">
+                        
+                        <span class="card-title">开发文档</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            huang
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2021/01/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87Blog/">
                     <div class="card-image">
@@ -736,45 +783,8 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-02
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            huang
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/01/01/TestWeb-1/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="TestWeb">
-                        
-                        <span class="card-title">TestWeb</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-02
                             </span>
                         <span class="publish-author">
                             
@@ -784,7 +794,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
